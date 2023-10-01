@@ -238,12 +238,19 @@ console.log(total2);
     console.log(product);*/
     
     const arr12 = [[1, 2], [3, 4], [5, 6, 7]];
-    function MultiplyMatrix(arr12){
+    //function MultiplyMatrix(arr12){
         let product = 1;   
         for(let i = 0; i < arr12.length; i++){
             for (let j = 0; j < arr12[i].length; j++){
-                product *= myArr101[i][j];
+                product *= arr12[i][j];
+                console.log(product);
         }
-        console.log(product);
-        }}
-        MultiplyMatrix(arr12);
+    }
+
+    //Console output:
+    //2
+    //6
+    //24
+    //120
+    //720
+    //5040  
