@@ -243,14 +243,9 @@ console.log(total2);
         for(let i = 0; i < arr12.length; i++){
             for (let j = 0; j < arr12[i].length; j++){
                 product *= arr12[i][j];
+                if(i==arr12.length-1 && j==arr12[i].length-1){
                 console.log(product);
+                }
         }
     }
-
-    //Console output:
-    //2
-    //6
-    //24
-    //120
-    //720
-    //5040  
+ 
