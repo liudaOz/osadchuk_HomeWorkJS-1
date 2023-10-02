@@ -248,4 +248,67 @@ console.log(total2);
                 }
         }
     }
+
+/* 13.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.*/   
  
+let someString = "EnglishLevelOnlineImproveChooseA1."
+console.log(someString.replaceAll(/[aeiouAEIOU]/g,''));
+
+
+/* 14.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
+    так щоб в консоль виводився результат обчислень з правильним закінченням.
+    Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
+
+    Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)*/
+
+    /*let unitOfLength2 = 111;
+    let v2, r2;
+    r2 = unitOfLength2 / 1000;
+    v2 = String(r2);
+
+
+    if ((v2.endsWith("0") && v2.slice(-1)) || v2.endsWith("5") || v2.endsWith("6")
+    || v2.endsWith("7") || v2.endsWith("8") || v2.endsWith("9") 
+    || ((v2.endsWith("1") && v2.slice(-2))) ){
+        console.log(unitOfLength2 + ' метрів це ' + r2 + ' кілометра');
+    } else if ((v2.endsWith("1") && v2.slice(-1))){
+        console.log(unitOfLength2 + ' метр це ' + r2 + ' кілометра');
+    } else if (v2.endsWith("2") || v2.endsWith("3")|| v2.endsWith("4")){
+        console.log(unitOfLength2 + ' метри це ' + r2 + ' кілометра');
+    } else {console.log('Значення не існує ');}*/
+
+    // не написала код для 1, 101, 1001
+    
+    // for me
+    let unitOfLength = 'm';
+    let number = 111;
+    let r;
+    let v = 1000;
+    switch(unitOfLength){
+    case 'm':
+        console.log(r=number/v + ' кілометрів - це ' + number + ' ' + unitOfLength);
+        break;
+    case 'km':
+        console.log(r=number*v + ' метрів - це ' + number + ' ' + unitOfLength);
+        break;
+    default:
+        console.log('Default output');
+        break;   
+    }
+
+
+    /*let unitOfLength2 = 101;
+    let v2, r2;
+    r2 = unitOfLength2 / 1000;
+    v2 = String(r2);
+
+
+    if ((v2.endsWith("0") && v2.slice(-1)) || v2.endsWith("5") || v2.endsWith("6")
+    || v2.endsWith("7") || v2.endsWith("8") || v2.endsWith("9") 
+    || ((v2.endsWith("1") && v2.slice(-2))) ){
+        console.log(unitOfLength2 + ' метрів це ' + r2 + ' кілометра');
+    } else if ((v2.endsWith("1") && v2.indexOf("0")==1)){
+        console.log(unitOfLength2 + ' метр це ' + r2 + ' кілометра');
+    } else if (v2.endsWith("2") || v2.endsWith("3")|| v2.endsWith("4")){
+        console.log(unitOfLength2 + ' метри це ' + r2 + ' кілометра');
+    } else {console.log('Значення не існує ');}*/
