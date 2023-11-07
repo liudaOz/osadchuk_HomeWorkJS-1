@@ -181,6 +181,13 @@ for (let i = 0; i < 5; i++) {
     console.log(myArray[i]);
 }
 
+
+let myArrayN = [];
+for (let i = 1; i < 6; i++) {
+    myArrayN.push(i);
+}
+console.log(myArrayN);
+
 /* 9. Напишіть 2 цикли.
 За допомогою першого передайте парні числа від 1 до 9 у myArray за допомогою циклу for.
 За допомогою другого передайте непарні числа від 1 до 9 у myArray за допомогою циклу for.*/
@@ -198,6 +205,15 @@ for (let i = 0; i < myArray92.length; i++) {
         console.log(myArray92[i]);
     }
 }
+
+
+let myArrayN9 = [];
+for (let i = 1; i < 10; i +=2){
+    myArrayN9.push(i);
+}for (let i = 2; i < 10; i +=2){
+    myArrayN9.push(i);
+}
+console.log(myArrayN9);
 
 /* 10. Оголоcіть та ініціалізуйте змінну total = 0.
     Використовуйте цикл for, щоб додати значення кожного елемента масиву myArr до підсумку.
